@@ -3,9 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, world!</title>
+    <meta name="theme-color" content="#f5f2eb">
+    <meta name="description" content="Meet Toy, a cheerful little companion.">
+    <title>Toy — A little something special</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Little Things home">little things<span>.</span></a>
+      <span class="header-note">A little joy, delivered.</span>
+    </header>
+
+    <main>
+      <section class="product" aria-labelledby="product-name">
+        <div class="product-art">
+          <span class="art-caption">A new best friend</span>
+          <img src="toy.svg" alt="A soft, smiling golden teddy bear toy">
+          <span class="art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="art-sparkle sparkle-two" aria-hidden="true">✦</span>
+        </div>
+        <div class="product-info">
+          <p class="eyebrow">The little things collection / 001</p>
+          <h1 id="product-name">Toy<span>.</span></h1>
+          <p class="description">A soft, sunny little friend made for big hugs, small adventures, and keeping close. The perfect pick-me-up for someone you love (that someone can be you).</p>
+          <div class="product-details">
+            <span>Soft-touch plush</span>
+            <span>Made for all ages</span>
+            <span>One very good hugger</span>
+          </div>
+          <div class="purchase-row">
+            <div class="price"><span>Just</span><strong>$24.00</strong></div>
+            <button class="buy-button" id="buy-button" type="button">Buy <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="shipping-note">A little joy, on its way to you.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Made with a little extra love.</span><span>© <span id="current-year"></span> Little Things</span></footer>
+
+    <dialog class="checkout" id="checkout" aria-labelledby="checkout-title">
+      <div class="checkout-card">
+        <button class="close-button" id="close-checkout" type="button" aria-label="Close checkout">×</button>
+        <p class="eyebrow">A little checkout</p>
+        <h2 id="checkout-title">Almost <em>yours.</em></h2>
+        <p class="checkout-intro">Scan this test QR code, then enter the last 4 digits of your transaction ID.</p>
+        <div class="qr-frame">
+          <img src="test-qr.svg" alt="Test QR code placeholder, not linked to an account">
+          <span>TEST QR · NOT A REAL PAYMENT</span>
+        </div>
+        <form id="transaction-form">
+          <label for="transaction-id">Last 4 digits of transaction ID</label>
+          <div class="input-row">
+            <input id="transaction-id" name="transaction-id" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{4}" placeholder="0000" aria-describedby="input-help" required>
+            <button class="done-button" type="submit">Done <span aria-hidden="true">→</span></button>
+          </div>
+          <p class="input-help" id="input-help">Enter exactly four numbers.</p>
+        </form>
+        <p class="confirmation" id="confirmation" role="status" aria-live="polite" hidden></p>
+        <p class="demo-note">Demo only. This QR is not connected to an account and no payment is processed or verified.</p>
+      </div>
+    </dialog>
   </body>
 </html>
