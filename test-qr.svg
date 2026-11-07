@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" role="img" aria-labelledby="title">
+  <title id="title">Decorative test QR placeholder, not scannable</title>
+  <rect width="210" height="210" fill="#fff"/>
+  <defs>
+    <pattern id="modules" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#26372e"/>
+      <rect x="7" y="7" width="7" height="7" fill="#26372e"/>
+    </pattern>
+  </defs>
+  <rect x="14" y="14" width="182" height="182" fill="url(#modules)"/>
+  <rect x="28" y="28" width="56" height="56" fill="#fff"/>
+  <rect x="35" y="35" width="42" height="42" fill="#26372e"/>
+  <rect x="42" y="42" width="28" height="28" fill="#fff"/>
+  <rect x="49" y="49" width="14" height="14" fill="#26372e"/>
+  <rect x="126" y="28" width="56" height="56" fill="#fff"/>
+  <rect x="133" y="35" width="42" height="42" fill="#26372e"/>
+  <rect x="140" y="42" width="28" height="28" fill="#fff"/>
+  <rect x="147" y="49" width="14" height="14" fill="#26372e"/>
+  <rect x="28" y="126" width="56" height="56" fill="#fff"/>
+  <rect x="35" y="133" width="42" height="42" fill="#26372e"/>
+  <rect x="42" y="140" width="28" height="28" fill="#fff"/>
+  <rect x="49" y="147" width="14" height="14" fill="#26372e"/>
+  <rect x="112" y="98" width="28" height="28" rx="4" fill="#dce889"/>
+  <path d="M119 112h14m-7-7v14" stroke="#536e54" stroke-linecap="round" stroke-width="3"/>
+</svg>
